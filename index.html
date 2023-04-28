@@ -60,19 +60,19 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <figure>
-                        <img src="./assets/ba1.jpg" class="d-block w-100" height="550" alt="imagenBsAs_1">
+                        <img src="./assets/ba1.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_1">
 
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img src="./assets/ba2.jpg" class="d-block w-100" height="550" alt="imagenBsAs_2">
+                        <img src="./assets/ba2.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_2">
 
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img src="./assets/ba3.jpg" class="d-block w-100" height="550" alt="imagenBsAs_3">
+                        <img src="./assets/ba3.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_3">
 
                     </figure>
                 </div>
@@ -114,8 +114,8 @@
 
         <!--ORADORES-->
         <div>
-            <div class="oradores__text">
-                <h6 class="mb-0 text-uppercase font-weight-light ">conoce a los </h6>
+            <div class="titles__text">
+                <p class="mb-0 text-uppercase font-weight-light ">conoce a los </p>
                 <h2 class="text-uppercase">Oradores</h2>
             </div>
 
@@ -124,7 +124,8 @@
                 <div class="row justify-content-md-center card-deck ">
                     <div class="col col-lg-3 mb-3">
                         <div class="card w-100">
-                            <img class="card-img-top img-fluid" src="./assets/steve.jpg" alt="Card image cap" height="300vh">
+                            <img class="card-img-top img-fluid" src="./assets/steve.jpg" alt="Card image cap"
+                                height="300vh">
                             <div class="card-body">
                                 <span class="badge bg-warning">JavaScript</span>
                                 <span class="badge bg-primary">React</span>
@@ -138,7 +139,8 @@
                     </div>
                     <div class="col col-lg-3 mb-3">
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="./assets/bill.jpg" alt="Card image cap" height="300vh">
+                            <img class="card-img-top img-fluid" src="./assets/bill.jpg" alt="Card image cap"
+                                height="300vh">
                             <div class="card-body">
                                 <span class="badge bg-warning">JavaScript</span>
                                 <span class="badge bg-primary">React</span>
@@ -153,7 +155,8 @@
 
                     <div class="col col-lg-3 mb-3">
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="./assets/ada.jpeg" alt="Card image cap" height="300vh">
+                            <img class="card-img-top img-fluid" src="./assets/ada.jpeg" alt="Card image cap"
+                                height="300vh">
                             <div class="card-body">
                                 <span class="badge bg-secondary">Negocios</span>
                                 <span class="badge bg-danger">Startups</span>
@@ -173,23 +176,91 @@
         <!--CONOCE MÁS-->
         <div class="card mb-3">
             <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/honolulu.jpg" class="img-fluid " alt="...">
-              </div>
-              <div class="col-md-6 cm__info">
-                <div class="card-body">
-                  <h5 class="card-title">Bs As - Octubre</h5>
-                  <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup>  de superficie).</p>
-
-                  <button type="button" class="btn btn-outline-light">Conocé más</button>
-                 
+                <div class="col-md-6">
+                    <img src="./assets/honolulu.jpg" class="img-fluid " alt="...">
                 </div>
-              </div>
+                <div class="col-md-6 cm__info">
+                    <div class="card-body">
+                        <h5 class="card-title">Bs As - Octubre</h5>
+                        <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de
+                            Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales
+                            ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa
+                            sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una
+                            ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de
+                            superficie).</p>
+
+                        <button type="button" class="btn btn-outline-light">Conocé más</button>
+
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+
+        <!--FORMULARIO-->
+        <div>
+            <div class="titles__text">
+                <p class="mb-0 text-uppercase font-weight-light ">Conviértete en un </p>
+                <h2 class="text-uppercase">Orador</h2>
+                <p>Anótate como orador para dar una <span class="sub__text">charla ignite</span>. Cuéntanos de que
+                    quieres hablar!</p>
+
+            </div>
+
+            <div class="container">
+                <form class="row g-3 justify-content-md-center">
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" value="" required>
+                    </div>
+
+                    <div class="col-md-8">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Sobre qué quieres hablar?"></textarea>
+                        <p><small class="text-muted">Recuerda incluir un título para tu charla </small></p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-formulario-primary " type="button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
 
 
     </main>
+
+    <!--FOOTER-->
+
+
+    <footer class="mt-3">
+        <div class="container cn-nv">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Preguntas<br> Frecuentes</a>
+                </li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Contáctano</a></li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Prensa</a></li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Conferencia</a></li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Términos y<br> condiciones</a>
+                </li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Privacidad</a></li>
+                <li class="nav-item"><a href="http://" class="nav-link m-lg-3 text-muted">Estudiantes</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
 
 
 
