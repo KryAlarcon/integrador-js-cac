@@ -34,3 +34,10 @@ figure:nth-child(1){
     --bs-btn-color: rgb(246, 250, 246) !important;
   }
 
+/*ORADORES*/
+.oradores__text{
+  text-align: center;
+  line-height: 1;
+
+}
+
