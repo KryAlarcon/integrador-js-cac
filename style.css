@@ -1,0 +1,36 @@
+
+/*HEADER*/
+nav div .navbar-nav a{
+    color: gray;
+}
+
+nav div .navbar-nav .last{
+    color: rgb(122, 199, 7);
+}
+
+
+/*CARRUSEL*/
+
+
+
+.carousel-div__text{
+    text-align: end;
+    float: right;
+}
+
+figure:nth-child(1){
+    filter: brightness(50%);
+  }
+
+  .btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: rgb(246, 250, 246) !important;
+    --bs-btn-bg: rgb(33, 163, 33) !important;
+    --bs-btn-border-color: blue;
+    --bs-btn-hover-bg: rgba(41,184,41,0.8);
+  }
+
+  .btn-outline-secondary{
+    --bs-btn-color: rgb(246, 250, 246) !important;
+  }
+
