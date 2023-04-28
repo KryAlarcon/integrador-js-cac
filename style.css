@@ -41,3 +41,9 @@ figure:nth-child(1){
 
 }
 
+/*CONOCE MÁS*/
+
+.cm__info{
+  background-color: #353a40 !important;
+  color: aliceblue !important;
+}
