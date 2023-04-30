@@ -56,23 +56,22 @@
     <main>
 
         <!--CARRUSEL-->
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <figure>
-                        <img src="./assets/ba1.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_1">
+                        <img src="./assets/ba1.jpg" class="d-block w-100 img-fluid" style="max-height: 550px;" alt="imagenBsAs_1">
 
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img src="./assets/ba2.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_2">
-
+                        <img src="./assets/ba2.jpg" class="d-block w-100 img-fluid" style="max-height: 550px;" alt="imagenBsAs_2">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img src="./assets/ba3.jpg" class="d-block w-100"  height="550" alt="imagenBsAs_3">
+                        <img src="./assets/ba3.jpg" class="d-block w-100 img-fluid" style="max-height: 550px;" alt="imagenBsAs_3">
 
                     </figure>
                 </div>
@@ -81,16 +80,20 @@
 
             <div class="mb-md-5 carousel-caption ">
 
-                <div class="col-md-6 col carousel-div__text">
-                    <h1>Conf Bs As</h1>
+                <div class="col-lg-6 col carousel-div__text">
+                    <h1 class="carousel-div__texttitle">Conf Bs As</h1>
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
                         conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a
                         conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
-                        que tenemos para ti. <br />Te esperamos!</b></p>
-                    <div class="d-grid gap-2 d-md-block">
-                        <button class="btn btn-outline-secondary" type="button">Quiero ser orador</button>
-                        <button class="btn btn-bd-primary " type="button">Comprar tickets</button>
-                    </div>
+                        que tenemos para ti. Te esperamos!</b></p>
+
+                        
+                        <div>
+                            <a class="btn btn-outline-secondary carousel-div__textbuttons" href="#inscripcion">Quiero ser orador</a>
+                            <button class="btn btn-bd-primary carousel-div__textbuttons" type="button">Comprar tickets</button>
+                        </div>
+                        
+                    
                 </div>
 
 
@@ -99,11 +102,11 @@
 
 
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -197,7 +200,7 @@
         </div>
 
         <!--FORMULARIO-->
-        <div>
+        <div id="inscripcion">
             <div class="titles__text">
                 <p class="mb-0 text-uppercase font-weight-light ">Conviértete en un </p>
                 <h2 class="text-uppercase">Orador</h2>

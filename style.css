@@ -1,91 +1,100 @@
-
-
 /*Uso general*/
-.titles__text{
+@media (max-width: 500px) {
+  .carousel-div__text {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  .carousel-div__textbuttons,
+  .carousel-div__texttitle {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .carousel-div__text {
+    text-align: end;
+    float: right;
+    margin-bottom: 5%;
+    right: inherit;
+  }
+}
+
+
+
+
+.titles__text {
   text-align: center;
   line-height: 1;
 
 }
 
-.sub__text{
-  text-decoration:underline;
+.sub__text {
+  text-decoration: underline;
   -moz-text-decoration-style: dotted;
   text-decoration-style: dotted;
 }
 
 /*HEADER*/
-nav div .navbar-nav a{
-    color: gray;
+nav div .navbar-nav a {
+  color: gray;
 }
 
-nav div .navbar-nav .last{
-    color: rgb(122, 199, 7);
+nav div .navbar-nav .last {
+  color: rgb(122, 199, 7);
 }
 
 
 /*CARRUSEL*/
 
-
-
-.carousel-div__text{
-    text-align: end;
-    float: right;
-    
+figure:nth-child(1) {
+  filter: brightness(50%);
 }
 
-figure:nth-child(1){
-    filter: brightness(50%);
-  }
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: rgb(246, 250, 246) !important;
+  --bs-btn-bg: rgb(33, 163, 33) !important;
+  --bs-btn-border-color: blue;
+  --bs-btn-hover-bg: rgba(41, 184, 41, 0.8);
+}
 
-  .btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: rgb(246, 250, 246) !important;
-    --bs-btn-bg: rgb(33, 163, 33) !important;
-    --bs-btn-border-color: blue;
-    --bs-btn-hover-bg: rgba(41,184,41,0.8);
-  }
-
-  .btn-outline-secondary{
-    --bs-btn-color: rgb(246, 250, 246) !important;
-  }
+.btn-outline-secondary {
+  --bs-btn-color: rgb(246, 250, 246) !important;
+}
 
 
 
 
 /*CONOCE MÁS*/
 
-.cm__info{
+.cm__info {
   background-color: #353a40 !important;
   color: aliceblue !important;
 }
 
 /*FORMULARIO*/
-.btn-formulario-primary{
+.btn-formulario-primary {
   --bs-btn-font-weight: 100%;
   --bs-btn-color: rgb(246, 250, 246) !important;
   --bs-btn-bg: #96c93e !important;
   --bs-btn-border-color: rgb(20, 102, 9);
-  --bs-btn-hover-bg: rgba(41,184,41,0.8);
+  --bs-btn-hover-bg: rgba(41, 184, 41, 0.8);
 }
 
 /*Footer*/
-footer{
+footer {
   background-color: #1e5170;
 }
 
 
-.cn-nv .nav{/*
-  display: grid;
-  grid-template-columns: repeat(7,149px); */
+.cn-nv .nav {
+
   text-align: center;
   align-items: center;
 
 }
 
-footer div ul .text-muted{
+footer div ul .text-muted {
   color: aliceblue !important;
 }
-
-
-
-
