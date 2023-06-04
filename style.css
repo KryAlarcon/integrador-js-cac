@@ -98,3 +98,39 @@ footer {
 footer div ul .text-muted {
   color: aliceblue !important;
 }
+
+
+
+/*TICKETS*/
+
+.card-ticket{
+  -webkit-border-radius:0%  !important;
+  -moz-border-radius:0%  !important;
+  -ms-border-radius:0%  !important;
+  -o-border-radius:0%  !important;
+  border-radius:0%  !important;
+  --bs-card-spacer-x:0rem !important;
+}
+
+.first-card{
+  border-color:#047dfe !important;
+}
+
+.second-card{
+  border-color: #4bb7c8 !important;
+}
+
+.third-card{
+  border-color: #ffc10a !important;
+}
+
+/*FORMULARIO*/
+
+.container-fluid form {
+  max-width: 700px !important;
+  margin: 0 auto;
+}
+
+.label-formulario{
+  margin-bottom: 10px;
+}
