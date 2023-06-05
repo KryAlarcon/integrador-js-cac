@@ -58,29 +58,42 @@
         <div class="container-fluid">
             <div class="row justify-content-md-center card-deck p-3">
                 <div class="card col-lg-2 card-ticket text-center m-1 first-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Estudiante</h5>
-                        <p class="card-text">Tiene un descuento</p>
-                        <p><strong>80%</strong></p>
-                        <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
-                    </div>
+                    <a class="link-descuentos" href="#formulario-compra">
+                        <div class="card-body" onclick="seleccionTipoAsistente('estudiante')">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p><strong>80%</strong></p>
+                            <p class="card-text"><small >* presentar documentación</small></p>
+                        
+                        </div>
+                    </a>
+                
                 </div>
+
+               
                 <div class="card col-lg-2 card-ticket text-center m-1 second-card">
-                    <div class="card-body">
+                    <a class="link-descuentos" href="#formulario-compra">
+                    <div class="card-body" onclick="seleccionTipoAsistente('trainee')">
                         <h5 class="card-title">Trainee</h5>
                         <p class="card-text">Tiene un descuento</p>
                         <p><strong>50%</strong></p>
                         <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
                     </div>
+                </a>
                 </div>
+            
+                
                 <div class="card col-lg-2 card-ticket text-center m-1 third-card">
-                    <div class="card-body">
+                    <a class="link-descuentos" href="#formulario-compra">
+                    <div class="card-body" onclick="seleccionTipoAsistente('junior')">
                         <h5 class="card-title">Junior</h5>
                         <p class="card-text">Tiene un descuento</p>
                         <p><strong>15%</strong></p>
                         <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
                     </div>
+                </a>
                 </div>
+            
             </div>
         </div>
 
@@ -92,24 +105,45 @@
             </div>
         </div>
 
-        <div class="container-fluid">
-            <form class="row g-3 justify-content-md-center">
+        <div class="container-fluid" id="formulario-compra">
+            <form class="row g-3 justify-content-md-center" id="form-Compra">
 
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="" minlength="3" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="" minlength="3"
+                        required>
+                        <div class="col-md-12" id="advertencia-nombre">
+                            <div class="p-2 mb-3 mt-3 bg-danger bg-opacity-25 rounded-1">
+                                <p class="mt-3">Por favor, ingrese su nombre. Mínimo de carácteres: 3</p>
+                            </div>
+                        </div>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" value="" minlength="3" required>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" value="" minlength="3"
+                        required>
+                        <div class="col-md-12" id="advertencia-apellido">
+                            <div class="p-2 mb-3 mt-3 bg-danger bg-opacity-25 rounded-1">
+                                <p class="mt-3">Por favor, ingrese su apellido. Mínimo de carácteres: 3</p>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-md-12">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Correo" value=""
                         required>
+                        <div class="col-md-12" id="advertencia-email">
+                            <div class="p-2 mb-3 mt-3 bg-danger bg-opacity-25 rounded-1">
+                                <p class="mt-3">Por favor, ingrese un mail válido</p>
+                            </div>
+                        </div>
                 </div>
                 <div class="col-md-6">
                     <label for="cantidad" class="mb-2">Cantidad</label>
-                    <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" value="0" min="1"
-                        required>
+                    <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" min="1" required>
+                    <div class="col-md-12" id="advertencia-cantidad">
+                        <div class="p-2 mb-3 mt-3 bg-danger bg-opacity-25 rounded-1">
+                            <p class="mt-3">Por favor, ingrese la cantidad de tickets</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <label for="categoria" class="mb-2">Categoría</label>
@@ -117,6 +151,7 @@
                         <option value="estudiante" selected>Estudiante</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
+                        <option value="otro">Otro</option>
                     </select>
                 </div>
                 <div class="col-md-12">
@@ -130,7 +165,8 @@
                         onclick="restaurarCosto()">Borrar</button>
                 </div>
                 <div class="p-md-1 col-md-6">
-                    <button class="w-100 btn btn-formulario-primary d-block " type="submit">Resumen</button>
+                    <button class="w-100 btn btn-formulario-primary d-block " type="button" id="buttonResumen" onclick="emailValido()">Resumen</button>
+
                 </div>
 
         </div>
@@ -160,6 +196,7 @@
     </footer>
 
     <script src="./js/verificacionForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

@@ -1,4 +1,5 @@
 /*Uso general*/
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 @media (max-width: 500px) {
   .carousel-div__text {
     font-size: 0.6rem;
@@ -103,6 +104,11 @@ footer div ul .text-muted {
 
 /*TICKETS*/
 
+.link-descuentos{
+  text-decoration: none;
+  color: black;
+}
+
 .card-ticket{
   -webkit-border-radius:0%  !important;
   -moz-border-radius:0%  !important;
@@ -114,6 +120,7 @@ footer div ul .text-muted {
 
 .first-card{
   border-color:#047dfe !important;
+  color: black;
 }
 
 .second-card{
@@ -123,6 +130,28 @@ footer div ul .text-muted {
 .third-card{
   border-color: #ffc10a !important;
 }
+
+.first-card:hover{
+  text-shadow: 0 0 1em rgb(255, 174, 0), 0 0 0.2em rgb(255, 174, 0);
+  background-color: rgba(12, 48, 250, 0.5);
+  font-family: 'Aoboshi One', serif;
+  border: double 1em;
+}
+
+.second-card:hover{
+  text-shadow: 0 0 1em rgb(5, 114, 41), 0 0 0.2em rgb(6, 110, 11);
+  background-color: rgba(12, 250, 198, 0.5);
+  font-family: 'Aoboshi One', serif;
+  border: 1em double green;
+}
+
+.third-card:hover{
+  text-shadow: 0 0 1em rgb(25, 5, 114), 0 0 0.2em rgb(157, 152, 226);
+  background-color: rgba(234, 250, 12, 0.5);
+  font-family: 'Aoboshi One', serif;
+  border: 1em double;
+}
+
 
 /*FORMULARIO*/
 
