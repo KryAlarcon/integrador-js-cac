@@ -78,11 +78,11 @@ function emailValido(){
     // Using test we can check if the text match the pattern
     if( validEmail.test(emailField.value) ){
         document.getElementById("advertencia-email").style.display = 'none';
-        console.log("none")
+        
         return true;
     } else {
         document.getElementById("advertencia-email").style.display = 'block';
-        console.log("block")
+       
         return false;
     }
 }
@@ -96,7 +96,7 @@ emailValido()
 
 //Calculo dependiendo del asistente
 function calculoCostoTicket(selectedOption, cantidadTickets) {
-    console.log(cantidadTickets);
+  
     if (cantidadTickets < 1) {
         document.getElementById("advertencia-cantidad").style.display = 'block';
         costoTotal.innerHTML = "-";
@@ -184,7 +184,7 @@ document.getElementById('buttonResumen').onclick = function(){
    
     invalid = false;
     invalid = !emailValido();
-    console.log(!emailValido());
+    
    
     if (lengthNombre < 3){
         document.getElementById("advertencia-nombre").style.display = 'block';
