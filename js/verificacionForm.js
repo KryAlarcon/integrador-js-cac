@@ -40,7 +40,7 @@ document.getElementById('nombre').addEventListener('keydown', event => {
         document.getElementById("advertencia-nombre").style.display = 'block';
     } else {
         document.getElementById("advertencia-nombre").style.display = 'none';
-        console.log(lengthNombre);
+        
     }
 
 });
@@ -183,10 +183,10 @@ function restaurarCosto() {
 document.getElementById('buttonResumen').onclick = function(){
    
     invalid = false;
-    invalid = validEmail();
+    invalid = !emailValido();
+    console.log(!emailValido());
    
     if (lengthNombre < 3){
-        console.log(lengthNombre);
         document.getElementById("advertencia-nombre").style.display = 'block';
         invalid = true;
     } 
