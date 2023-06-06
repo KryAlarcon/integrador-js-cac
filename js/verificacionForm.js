@@ -183,7 +183,8 @@ function restaurarCosto() {
 document.getElementById('buttonResumen').onclick = function(){
    
     invalid = false;
-    console.log(lengthNombre);
+    invalid = validEmail();
+   
     if (lengthNombre < 3){
         console.log(lengthNombre);
         document.getElementById("advertencia-nombre").style.display = 'block';
