@@ -17,7 +17,7 @@ costoTotal.innerHTML = "-";
 
 const precio = 200;
 
-
+//seleccion de los asistentes a partir de los botones iniciales
 function seleccionTipoAsistente(tipoAsistente) {
     selecTipoAsistente.value = tipoAsistente;
     calculoCostoTicket(tipoAsistente, (this.cantidadTickets === undefined ? 0 : this.cantidadTickets));
@@ -69,24 +69,21 @@ document.getElementById('apellido').addEventListener('keydown', event => {
 //validación de email
 function emailValido(){
                 
-    // Get our input reference.
     var emailField = document.getElementById('email');
 
-    // Define our regular expression.
     var validEmail =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    // Using test we can check if the text match the pattern
+
     if( validEmail.test(emailField.value) ){
         document.getElementById("advertencia-email").style.display = 'none';
-        
         return true;
     } else {
         document.getElementById("advertencia-email").style.display = 'block';
-       
         return false;
     }
 }
 
+//verifica que el email que se esté ingresando sea válido
 document.getElementById("email").addEventListener('keypress',
 function(){
 emailValido()
@@ -132,7 +129,7 @@ function calculoCostoTicket(selectedOption, cantidadTickets) {
 
 
 
-//Cambio del tipo de asistente
+//Cambio del tipo de asistente mediante el select
 selecTipoAsistente.addEventListener('change',
 
     function () {
@@ -145,7 +142,6 @@ selecTipoAsistente.addEventListener('change',
     }
 
 );
-
 
 
 
@@ -179,6 +175,7 @@ document.getElementById('cantidad').addEventListener('keydown', event => {
 
 });
 
+//vuelve a poner el span del costo en nada
 function restaurarCosto() {
     costoTotal.innerHTML = "-";
 }
