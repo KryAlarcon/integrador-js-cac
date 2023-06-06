@@ -106,8 +106,10 @@ function calculoCostoTicket(selectedOption, cantidadTickets) {
 
         if (selectedOption === "estudiante") {
 
-            costoTotal.innerHTML = (precio - (precio * 0.8)) * (Number(cantidadTickets));
-
+            
+            costoTotalTickets = (precio - (precio * 0.8)) * (Number(cantidadTickets));
+            costoTotal.innerHTML = costoTotalTickets;
+            
         }
 
         else if (selectedOption === "trainee") {
@@ -122,6 +124,8 @@ function calculoCostoTicket(selectedOption, cantidadTickets) {
             costoTotalTickets = precio * (Number(cantidadTickets));
             costoTotal.innerHTML = costoTotalTickets;
         }
+
+        return costoTotalTickets;
     }
 
 }
@@ -203,9 +207,14 @@ document.getElementById('buttonResumen').onclick = function(){
 
     if (!invalid){
     Swal.fire({
-        title: 'Confirmación de envio',
-        text: "¿Confirma el envío del formulario?",
-        icon: 'warning',
+        html:
+    '<label>Nombre: </label> <b> ' + document.getElementById('nombre').value +
+    '</b> <br>Apellido: <b> ' + document.getElementById('apellido').value +
+    '</b> <br> Email: <b>' + document.getElementById('email').value + 
+    '</b> <br> Tipo de asistente: <b>'+ document.getElementById("categoria").value + 
+    '</b> <br>Cantidad de Tickets: <b>'+ document.getElementById("cantidad").value +
+    '</b> <br> Total: <h4>$' + calculoCostoTicket(document.getElementById("categoria").value, document.getElementById("cantidad").value) + "</h4><br> ¿Confirma el envio del formulario?",
+        title: 'Resumen',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
