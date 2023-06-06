@@ -175,9 +175,13 @@ document.getElementById('cantidad').addEventListener('keydown', event => {
 
 });
 
-//vuelve a poner el span del costo en nada
-function restaurarCosto() {
+//vuelve a poner el form de forma inicial
+function restaurarForm() {
     costoTotal.innerHTML = "-";
+    document.getElementById("advertencia-nombre").style.display = 'none';
+document.getElementById("advertencia-apellido").style.display = 'none';
+document.getElementById("advertencia-email").style.display = 'none';
+document.getElementById("advertencia-cantidad").style.display = 'none';
 }
 
 //Verificacion del form con Boton Resumen
